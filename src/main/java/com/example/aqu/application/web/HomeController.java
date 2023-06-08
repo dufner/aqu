@@ -1,14 +1,20 @@
-package com.example.demo.web;
+package com.example.aqu.application.web;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class HomeController implements WebMvcConfigurer {
+
+
+
+//    private final AuthorRepos?\itory authorRepository;
+
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("home");
     }
+
+
 }
